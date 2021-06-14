@@ -7,8 +7,27 @@
   "repository": "https://github.com/satya164/use-latest-callback",
   "author": "Satyajit Sahoo <satyajit.happy@gmail.com>",
   "license": "MIT",
+  "keywords": [
+    "react-native-component",
+    "react-component",
+    "react-native",
+    "ios",
+    "android",
+    "tab",
+    "swipe",
+    "scrollable",
+    "coverflow"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "files": [
+    "src",
+    "lib"
+  ],
   "scripts": {
-    "prepare": "tsc --declaration --emitDeclarationOnly"
+    "prepare": "tsc --declaration --emitDeclarationOnly",
+    "release": "release-it"
   },
   "devDependencies": {
     "@commitlint/config-conventional": "^12.1.4",
