@@ -2,7 +2,8 @@
   "name": "use-latest-callback",
   "version": "0.1.1",
   "description": "React hook which returns the latest callback without changing the reference",
-  "main": "src/index.js",
+  "source": "src/index.ts",
+  "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "repository": "https://github.com/satya164/use-latest-callback",
   "author": "Satyajit Sahoo <satyajit.happy@gmail.com>",
@@ -26,14 +27,17 @@
     "lib"
   ],
   "scripts": {
-    "prepare": "tsc --declaration --emitDeclarationOnly",
+    "prebuild": "del lib",
+    "build": "tsc --declaration",
+    "prepare": "yarn build",
     "release": "release-it"
   },
   "devDependencies": {
     "@commitlint/config-conventional": "^12.1.4",
     "@release-it/conventional-changelog": "^3.0.1",
-    "@types/react": "^17.0.11",
+    "@types/react": "^18.0.10",
     "commitlint": "^12.1.4",
+    "del-cli": "^4.0.1",
     "eslint": "^7.28.0",
     "eslint-config-satya164": "^3.1.10",
     "prettier": "^2.3.1",
@@ -50,5 +54,9 @@
     "rules": {
       "import/no-commonjs": "off"
     }
-  }
+  },
+  "eslintIgnore": [
+    "node_modules/",
+    "lib/"
+  ]
 }
