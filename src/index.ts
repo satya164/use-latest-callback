@@ -12,16 +12,17 @@ const throwIfRender = () => {
 /**
  * React hook which returns the latest callback without changing the reference.
  */
-export default function useLatestCallback<
-  T extends (this: unknown, ...args: unknown[]) => unknown
->(callback: T): T {
+export default function useLatestCallback<T extends Function>(callback: T): T {
   // @ts-expect-error
   const ref = React.useRef<T>(throwIfRender);
 
-  const latestCallback = React.useRef(function latestCallback(...args) {
+  const latestCallback = React.useRef(function latestCallback(
+    this: unknown,
+    ...args: unknown[]
+  ) {
     // eslint-disable-next-line babel/no-invalid-this
     return ref.current.apply(this, args);
-  } as T).current;
+  } as unknown as T).current;
 
   // @ts-expect-error
   ref.current = throwIfRender;
