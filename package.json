@@ -32,6 +32,9 @@
     "prepare": "yarn build",
     "release": "release-it"
   },
+  "peerDependencies": {
+    "react": ">=16.8"
+  },
   "devDependencies": {
     "@commitlint/config-conventional": "^12.1.4",
     "@release-it/conventional-changelog": "^3.0.1",
