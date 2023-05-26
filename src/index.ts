@@ -6,7 +6,9 @@ const useIsomorphicLayoutEffect =
 /**
  * React hook which returns the latest callback without changing the reference.
  */
-export default function useLatestCallback<T extends Function>(callback: T): T {
+export default function useLatestCallback<T extends Function | undefined>(
+  callback: T
+): T {
   const ref = React.useRef<T>(callback);
 
   const latestCallback = React.useRef(function latestCallback(
@@ -14,7 +16,7 @@ export default function useLatestCallback<T extends Function>(callback: T): T {
     ...args: unknown[]
   ) {
     // eslint-disable-next-line babel/no-invalid-this
-    return ref.current.apply(this, args);
+    return ref.current?.apply(this, args);
   } as unknown as T).current;
 
   useIsomorphicLayoutEffect(() => {
