@@ -1,7 +1,5 @@
 import * as React from 'react';
-
-const useIsomorphicLayoutEffect =
-  typeof document !== 'undefined' ? React.useLayoutEffect : React.useEffect;
+import useIsomorphicLayoutEffect from './useIsomorphicLayoutEffect';
 
 /**
  * React hook which returns the latest callback without changing the reference.
