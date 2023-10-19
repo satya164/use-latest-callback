@@ -55,8 +55,5 @@
   "eslintIgnore": [
     "node_modules/",
     "lib/"
-  ],
-  "dependencies": {
-    "use-isomorphic-layout-effect": "^1.1.2"
-  }
+  ]
 }

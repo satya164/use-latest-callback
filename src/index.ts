@@ -1,5 +1,5 @@
 import * as React from 'react';
-import useIsomorphicLayoutEffect from 'use-isomorphic-layout-effect';
+import useIsomorphicLayoutEffect from './useIsomorphicLayoutEffect';
 
 /**
  * React hook which returns the latest callback without changing the reference.
