@@ -1,18 +1,15 @@
 {
   "compilerOptions": {
+    "rootDir": ".",
     "outDir": "lib",
     "target": "ES5",
-    "module": "CommonJS",
+    "module": "NodeNext",
     "declaration": true,
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
-    "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
-    "importsNotUsedAsValues": "error",
-    "isolatedModules": true,
     "jsx": "react",
-    "lib": ["esnext", "dom"],
-    "moduleResolution": "node",
+    "lib": ["ESNext", "DOM"],
     "noFallthroughCasesInSwitch": true,
     "noImplicitReturns": true,
     "noImplicitUseStrict": false,
@@ -22,6 +19,6 @@
     "noUnusedParameters": true,
     "resolveJsonModule": true,
     "skipLibCheck": true,
-    "strict": true,
+    "strict": true
   }
 }
