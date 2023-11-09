@@ -14,7 +14,7 @@ npm install use-latest-callback
 
 ## Usage
 
-The `useLatestCallback` hook accepts a function as its argument, and returns a function which preserves its reference across renders.
+The `useLatestCallback` hook accepts a function as its argument and returns a function that preserves its reference across renders.
 
 ```js
 const useLatestCallback = require('use-latest-callback');
@@ -29,9 +29,11 @@ function MyComponent() {
   React.useEffect(() => {
     someEvent.addListener(callback);
 
-    return someEvent.removeListener(callback);
+    return () => someEvent.removeListener(callback);
   }, [callback]);
 
   return <>{/* whatever */}</>;
 }
 ```
+
+It's important to note that the callback is not intended to be called during the render phase. Only call the callback in response to an event.
