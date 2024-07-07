@@ -1,5 +1,12 @@
 
 
+### [0.1.11](https://github.com/satya164/use-latest-callback/compare/v0.1.10...v0.1.11) (2024-07-07)
+
+
+### Bug Fixes
+
+* fix missing file in files field ([2857de3](https://github.com/satya164/use-latest-callback/commit/2857de3d30a1598b915cb948f8d0138f4abc7010))
+
 ### [0.1.10](https://github.com/satya164/use-latest-callback/compare/v0.1.9...v0.1.10) (2024-07-07)
 
 
