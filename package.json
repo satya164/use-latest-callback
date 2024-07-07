@@ -14,9 +14,9 @@
     "registry": "https://registry.npmjs.org/"
   },
   "type": "commonjs",
-  "source": "src/index.ts",
-  "main": "lib/src/index.js",
-  "types": "lib/src/index.d.ts",
+  "source": "./src/index.ts",
+  "main": "./lib/src/index.js",
+  "types": "./lib/src/index.d.ts",
   "exports": {
     ".": {
       "types": "./lib/src/index.d.ts",
@@ -26,7 +26,8 @@
   },
   "files": [
     "src",
-    "lib"
+    "lib",
+    "esm.mjs"
   ],
   "scripts": {
     "lint": "eslint \"**/*.{js,ts,tsx}\"",
