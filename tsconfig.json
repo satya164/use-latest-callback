@@ -5,6 +5,7 @@
     "target": "ES5",
     "module": "NodeNext",
     "declaration": true,
+    "esModuleInterop": true,
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
     "forceConsistentCasingInFileNames": true,

@@ -2,9 +2,6 @@
   "name": "use-latest-callback",
   "version": "0.1.9",
   "description": "React hook which returns the latest callback without changing the reference",
-  "source": "src/index.ts",
-  "main": "lib/src/index.js",
-  "types": "lib/src/index.d.ts",
   "repository": "https://github.com/satya164/use-latest-callback",
   "author": "Satyajit Sahoo <satyajit.happy@gmail.com>",
   "license": "MIT",
@@ -15,6 +12,17 @@
   ],
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
+  },
+  "type": "commonjs",
+  "source": "src/index.ts",
+  "main": "lib/src/index.js",
+  "types": "lib/src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./lib/src/index.d.ts",
+      "import": "./esm.mjs",
+      "require": "./lib/src/index.js"
+    }
   },
   "files": [
     "src",
