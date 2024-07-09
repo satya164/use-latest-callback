@@ -17,6 +17,7 @@
   "source": "./src/index.ts",
   "main": "./lib/src/index.js",
   "types": "./lib/src/index.d.ts",
+  "react-native": "./src/index.ts",
   "exports": {
     ".": {
       "types": "./lib/src/index.d.ts",
