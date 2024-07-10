@@ -31,6 +31,7 @@
   ],
   "scripts": {
     "lint": "eslint \"**/*.{js,ts,tsx}\"",
+    "test": "node --test",
     "typecheck": "tsc --noEmit",
     "prebuild": "del lib",
     "build": "tsc --declaration",

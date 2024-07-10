@@ -34,3 +34,6 @@ jobs:
 
       - name: Build package
         run: yarn prepare
+
+      - name: Test package
+        run: yarn test

@@ -22,5 +22,5 @@ function useLatestCallback<T extends Function>(callback: T): T {
   return latestCallback;
 }
 
-// Use export assignment so that it's compiled to module.exports = useLatestCallback
+// Use export assignment to compile to module.exports =
 export = useLatestCallback;
