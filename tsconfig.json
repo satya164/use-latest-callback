@@ -6,7 +6,6 @@
     "target": "ES5",
     "module": "CommonJS",
     "declaration": true,
-    "esModuleInterop": true,
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
     "forceConsistentCasingInFileNames": true,

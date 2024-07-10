@@ -5,7 +5,7 @@ import useIsomorphicLayoutEffect from './useIsomorphicLayoutEffect';
  * React hook which returns the latest callback without changing the reference.
  */
 // eslint-disable-next-line @typescript-eslint/ban-types
-export default function useLatestCallback<T extends Function>(callback: T): T {
+function useLatestCallback<T extends Function>(callback: T): T {
   const ref = React.useRef<T>(callback);
 
   const latestCallback = React.useRef(function latestCallback(
@@ -21,3 +21,6 @@ export default function useLatestCallback<T extends Function>(callback: T): T {
 
   return latestCallback;
 }
+
+// Use export assignment to compile to module.exports =
+export = useLatestCallback;

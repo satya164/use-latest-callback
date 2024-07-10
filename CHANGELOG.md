@@ -1,5 +1,12 @@
 
 
+## [0.2.0](https://github.com/satya164/use-latest-callback/compare/v0.1.11...v0.2.0) (2024-07-10)
+
+
+### Features
+
+* remove .default from commonjs output ([80c3cb2](https://github.com/satya164/use-latest-callback/commit/80c3cb2e01b3d6d63bae052f2376493baae6656e))
+
 ### [0.1.11](https://github.com/satya164/use-latest-callback/compare/v0.1.10...v0.1.11) (2024-07-07)
 
 

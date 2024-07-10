@@ -1,6 +1,6 @@
 {
   "name": "use-latest-callback",
-  "version": "0.1.11",
+  "version": "0.2.0",
   "description": "React hook which returns the latest callback without changing the reference",
   "repository": "https://github.com/satya164/use-latest-callback",
   "author": "Satyajit Sahoo <satyajit.happy@gmail.com>",
@@ -31,6 +31,7 @@
   ],
   "scripts": {
     "lint": "eslint \"**/*.{js,ts,tsx}\"",
+    "test": "node --test",
     "typecheck": "tsc --noEmit",
     "prebuild": "del lib",
     "build:cjs": "tsc --project tsconfig.json",
