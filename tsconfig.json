@@ -1,9 +1,10 @@
 {
   "compilerOptions": {
     "rootDir": ".",
-    "outDir": "lib",
+    "outDir": "lib/cjs",
+    "declarationDir": "lib/types",
     "target": "ES5",
-    "module": "NodeNext",
+    "module": "CommonJS",
     "declaration": true,
     "esModuleInterop": true,
     "allowUnreachableCode": false,
@@ -21,5 +22,7 @@
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "strict": true
-  }
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "lib", "esm"]
 }

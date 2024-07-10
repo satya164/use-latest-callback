@@ -13,27 +13,29 @@
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
-  "type": "commonjs",
+  "type": "module",
   "source": "./src/index.ts",
-  "main": "./lib/src/index.js",
-  "types": "./lib/src/index.d.ts",
+  "main": "./lib/cjs/src/index.js",
+  "module": "./lib/esm/src/index.js",
+  "types": "./lib/types/src/index.d.ts",
   "exports": {
     ".": {
-      "types": "./lib/src/index.d.ts",
-      "import": "./esm.mjs",
-      "require": "./lib/src/index.js"
+      "types": "./lib/types/src/index.d.ts",
+      "import": "./lib/esm/src/index.js",
+      "require": "./lib/cjs/src/index.js"
     }
   },
   "files": [
     "src",
-    "lib",
-    "esm.mjs"
+    "lib"
   ],
   "scripts": {
     "lint": "eslint \"**/*.{js,ts,tsx}\"",
     "typecheck": "tsc --noEmit",
     "prebuild": "del lib",
-    "build": "tsc --declaration",
+    "build:cjs": "tsc --project tsconfig.json",
+    "build:esm": "tsc --project tsconfig.esm.json",
+    "build": "yarn build:cjs && yarn build:esm",
     "prepare": "yarn build",
     "release": "release-it"
   },
