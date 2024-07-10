@@ -1,6 +1,4 @@
 // eslint-disable-next-line import/extensions
-import exports from './lib/src/index.js';
-
-const useLatestCallback = exports.default;
+import useLatestCallback from './lib/src/index.js';
 
 export default useLatestCallback;
