@@ -1,17 +1,18 @@
-import * as React from 'react';
+import { useRef } from 'react';
 import useIsomorphicLayoutEffect from './useIsomorphicLayoutEffect';
 
 /**
  * React hook which returns the latest callback without changing the reference.
  */
-// eslint-disable-next-line @typescript-eslint/ban-types
-function useLatestCallback<T extends Function>(callback: T): T {
-  const ref = React.useRef<T>(callback);
+function useLatestCallback<T extends (...args: A) => R, A extends unknown[], R>(
+  callback: T
+): T {
+  const ref = useRef<T>(callback);
 
-  const latestCallback = React.useRef(function latestCallback(
+  const latestCallback = useRef(function latestCallback(
     this: unknown,
-    ...args: unknown[]
-  ) {
+    ...args: A
+  ): R {
     return ref.current.apply(this, args);
   } as unknown as T).current;
 
