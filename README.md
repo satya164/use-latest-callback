@@ -17,7 +17,7 @@ npm install use-latest-callback
 The `useLatestCallback` hook accepts a function as its argument and returns a function that preserves its reference across renders.
 
 ```js
-const useLatestCallback = require('use-latest-callback');
+import useLatestCallback from 'use-latest-callback';
 
 // ...
 
