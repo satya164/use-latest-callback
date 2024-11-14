@@ -1,5 +1,7 @@
 
 
+### [0.2.2](https://github.com/satya164/use-latest-callback/compare/v0.2.1...v0.2.2) (2024-11-14)
+
 ### [0.2.1](https://github.com/satya164/use-latest-callback/compare/v0.2.0...v0.2.1) (2024-07-10)
 
 ## [0.2.0](https://github.com/satya164/use-latest-callback/compare/v0.1.11...v0.2.0) (2024-07-10)
