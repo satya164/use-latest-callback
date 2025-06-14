@@ -1,5 +1,13 @@
 import * as React from 'react';
-import useIsomorphicLayoutEffect from './useIsomorphicLayoutEffect';
+
+/**
+ * Use `useEffect` during SSR and `useLayoutEffect` in the Browser & React Native to avoid warnings.
+ */
+const useClientLayoutEffect =
+  typeof document !== 'undefined' ||
+  (typeof navigator !== 'undefined' && navigator.product === 'ReactNative')
+    ? React.useLayoutEffect
+    : React.useEffect;
 
 /**
  * React hook which returns the latest callback without changing the reference.
@@ -15,7 +23,7 @@ function useLatestCallback<T extends Function>(callback: T): T {
     return ref.current.apply(this, args);
   } as unknown as T).current;
 
-  useIsomorphicLayoutEffect(() => {
+  useClientLayoutEffect(() => {
     ref.current = callback;
   });
 
