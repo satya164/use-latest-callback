@@ -21,7 +21,7 @@
     ".": {
       "types": "./lib/src/index.d.ts",
       "import": "./esm.mjs",
-      "require": "./lib/src/index.js"
+      "default": "./lib/src/index.js"
     }
   },
   "files": [
