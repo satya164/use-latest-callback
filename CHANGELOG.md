@@ -1,5 +1,13 @@
 
 
+### [0.2.4](https://github.com/satya164/use-latest-callback/compare/v0.2.3...v0.2.4) (2025-06-14)
+
+
+### Bug Fixes
+
+* add a default condition for exports ([e28a2fb](https://github.com/satya164/use-latest-callback/commit/e28a2fbe8183faa8efdff4085c3e5e0589eb66f9))
+* remove platform-specific extensions for proper esm support ([df06008](https://github.com/satya164/use-latest-callback/commit/df06008a562c385fac1a6f0b5cd765096ec27d1d))
+
 ### [0.2.3](https://github.com/satya164/use-latest-callback/compare/v0.2.2...v0.2.3) (2024-11-14)
 
 ### [0.2.2](https://github.com/satya164/use-latest-callback/compare/v0.2.1...v0.2.2) (2024-11-14)
