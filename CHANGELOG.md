@@ -1,4 +1,10 @@
 
+## [Unreleased]
+
+### Fixed
+- Corrected `exports` map in `package.json` to avoid fallback resolution in Node environments.
+  - Replaced broken `"import": "./esm.mjs"` with a valid conditional export block.
+  - Ensures compatibility with Metro, Vite, and Node without resolution warnings.
 
 ### [0.2.4](https://github.com/satya164/use-latest-callback/compare/v0.2.3...v0.2.4) (2025-06-14)
 
