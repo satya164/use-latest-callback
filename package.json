@@ -1,6 +1,6 @@
 {
   "name": "use-latest-callback",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "description": "React hook which returns the latest callback without changing the reference",
   "repository": "https://github.com/satya164/use-latest-callback",
   "author": "Satyajit Sahoo <satyajit.happy@gmail.com>",
