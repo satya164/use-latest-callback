@@ -1,5 +1,12 @@
 
 
+## [0.3.0](https://github.com/satya164/use-latest-callback/compare/v0.2.6...v0.3.0) (2025-10-11)
+
+
+### Features
+
+* use `useInsertionEffect` instead of `useLayoutEffect` ([4acdb34](https://github.com/satya164/use-latest-callback/commit/4acdb345205716072f93ffa09ae4c629f7e32311))
+
 ### [0.2.6](https://github.com/satya164/use-latest-callback/compare/v0.2.5...v0.2.6) (2025-10-11)
 
 ### [0.2.5](https://github.com/satya164/use-latest-callback/compare/v0.2.4...v0.2.5) (2025-10-06)
