@@ -1,5 +1,12 @@
 
 
+### [0.3.1](https://github.com/satya164/use-latest-callback/compare/v0.3.0...v0.3.1) (2025-10-11)
+
+
+### Reverts
+
+* Revert "feat: use `useInsertionEffect` instead of `useLayoutEffect`" ([9809bf5](https://github.com/satya164/use-latest-callback/commit/9809bf53e61d5a22e76156ecc8ed1f77fadb753e))
+
 ## [0.3.0](https://github.com/satya164/use-latest-callback/compare/v0.2.6...v0.3.0) (2025-10-11)
 
 
