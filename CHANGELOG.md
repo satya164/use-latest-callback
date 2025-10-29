@@ -1,5 +1,7 @@
 
 
+### [0.3.2](https://github.com/satya164/use-latest-callback/compare/v0.3.1...v0.3.2) (2025-10-29)
+
 ### [0.3.1](https://github.com/satya164/use-latest-callback/compare/v0.3.0...v0.3.1) (2025-10-11)
 
 
