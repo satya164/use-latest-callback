@@ -1,5 +1,12 @@
 
 
+### [0.3.5](https://github.com/satya164/use-latest-callback/compare/v0.3.4...v0.3.5) (2026-07-26)
+
+
+### Bug Fixes
+
+* use useInsertionEffect unconditionally ([b209e05](https://github.com/satya164/use-latest-callback/commit/b209e052cecc03257982d6fb717fa7d07c6c9bb2))
+
 ### [0.3.4](https://github.com/satya164/use-latest-callback/compare/v0.3.3...v0.3.4) (2026-05-13)
 
 ### [0.3.3](https://github.com/satya164/use-latest-callback/compare/v0.3.2...v0.3.3) (2025-11-28)
